@@ -82,6 +82,18 @@ const config: MenuEntry[] = [
       },
     ],
   },
+
+  {
+    label: 'Roadmap',
+    icon: 'NftIcon',
+    href: 'https://yetiexchange.gitbook.io/yetiexchange/ecosystem/road-map',
+  },
+
+  {
+    label: 'Feedback',
+    icon: 'TicketIcon',
+    href: 'https://yeti.nolt.io/ ',
+  },
 ]
 
 export default config

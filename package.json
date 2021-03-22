@@ -1,6 +1,7 @@
 {
   "name": "yeti-frontend",
   "version": "0.1.0",
+  "homepage": "http://yeti.exchange/",
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
@@ -61,9 +62,8 @@
     "prettier": "^2.1.2",
     "source-map-explorer": "^2.5.1"
   },
-  "main": "ce Smart Chain",
+  "main": "index.js",
   "repository": "https://github.com/yetiexchange/yeti-frontend-farms-v2.git",
   "author": "Fahim Mahmud Chisti <fmchisti@users.noreply.github.com>",
-  "license": "1.0.0",
-  "description": "YETI EXCHANGE"
+  "license": "MIT"
 }

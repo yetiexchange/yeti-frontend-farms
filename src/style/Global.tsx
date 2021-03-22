@@ -20,7 +20,7 @@ const GlobalStyle = createGlobalStyle`
     }
 
     nav svg {
-      fill: #0A8EE6 !important;
+      fill: #028AE5 !important;
       overflow: inherit !important;
       
     }
@@ -38,7 +38,7 @@ const GlobalStyle = createGlobalStyle`
 
 
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 800px) {
       nav image{
       height: 35px !important;
         }
