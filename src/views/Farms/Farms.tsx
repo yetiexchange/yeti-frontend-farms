@@ -62,6 +62,8 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
           .div(new BigNumber(10).pow(18))
         const cakeRewardPerYear = cakeRewardPerBlock.times(BLOCKS_PER_YEAR)
 
+        console.log("CakePrice" , cakePrice.toJSON());
+
         let apy = cakePrice.times(cakeRewardPerYear)
 
         let totalValue = new BigNumber(farm.lpTotalInQuoteToken || 0)
@@ -73,6 +75,9 @@ const Farms: React.FC<FarmsProps> = (farmsProps) => {
         if (totalValue.comparedTo(0) > 0) {
           apy = apy.div(totalValue)
         }
+
+        console.log("Farm" , farm);
+        console.log("Apy" , apy.toJSON());
 
         return { ...farm, apy }
       })

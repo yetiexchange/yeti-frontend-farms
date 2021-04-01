@@ -14,6 +14,7 @@ export const calculateCakeEarnedPerThousandDollars = ({ numberOfDays, farmApy, c
 
   // To get the cake earned, deduct the amount after compounding (finalAmount) from the starting CAKE balance (principal)
   const interestEarned = finalAmount - principal
+
   return roundToTwoDp(interestEarned)
 }
 

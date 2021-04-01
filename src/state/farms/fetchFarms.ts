@@ -84,11 +84,14 @@ const fetchFarms = async () => {
           .div(new BigNumber(10).pow(quoteTokenDecimals))
           .times(lpTokenRatio)
 
+        console.log("quoteTokenAmount" , quoteTokenAmount.toJSON());
         if(tokenAmount.comparedTo(0) > 0){
           tokenPriceVsQuote = quoteTokenAmount.div(tokenAmount);
         }else{
           tokenPriceVsQuote = new BigNumber(quoteTokenBlanceLP).div(new BigNumber(tokenBalanceLP));
         }
+
+        console.log("tokenPriceVsQuote" , tokenPriceVsQuote.toJSON());
       }
 
       const [info, totalAllocPoint, yetiPerBlock] = await multicall(masterchefABI, [

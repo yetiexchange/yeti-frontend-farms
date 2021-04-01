@@ -63,7 +63,7 @@
     "source-map-explorer": "^2.5.1"
   },
   "main": "index.js",
-  "repository": "https://github.com/yetiexchange/yeti-frontend-farms-v2.git",
+  "repository": "https://github.com/yetiexchange/yeti-frontend-farms.git",
   "author": "Fahim Mahmud Chisti <fmchisti@users.noreply.github.com>",
   "license": "MIT"
 }
